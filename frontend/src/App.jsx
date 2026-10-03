@@ -34,7 +34,7 @@ function App() {
         formData.append('resume', resumeFile);
       }
 
-      const response = await axios.post('http://localhost:5000/api/analyze', formData, {
+      const response = await axios.post('https://practice-777k.onrender.com/api/analyze', formData, {
         headers: { 'Content-Type': activeTab === 'paste' ? 'application/json' : 'multipart/form-data' },
       });
 
